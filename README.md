@@ -39,6 +39,8 @@ Sends an email notification with the execution summary and attached data files.
 
 1. Configure your AWS S3 bucket details in the relevant task parameters.
 2. Set up a PostgreSQL connection in Airflow with the name `'postgres_conn'`.
+3. Set up a aws connection in Airflow with the name `'s3_conn'`.
+4. Set up your email for `'AIRFLOW__SMTP__SMTP_USER'` and `'AIRFLOW__SMTP__SMTP_MAIL_FROM'` in docker-compose.yaml
 
 ## Usage
 
