@@ -13,7 +13,7 @@ import sql_statements
 
 def get_popular_videos(region_codes):
     # Set up YouTube Data API client
-    api_key = 'AIzaSyD6cRZpAZq36yvb1yfPOkIaW5ZiI0ZAAFc'
+    api_key = os.environ.get("YT_API_KEY")
     youtube = build('youtube', 'v3', developerKey=api_key)
     
     try:
